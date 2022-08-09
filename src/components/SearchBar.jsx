@@ -5,7 +5,7 @@ export default function SearchBar({ onSearch }) {
   function handleOnSearch(){
     if(typeof onSearch === 'function'){
       const input = document.getElementById('search-bar-input');
-      onSearch(input);
+      onSearch(input.value);
     }
   }
   return (
